@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Menghitung Berat Badan Ideal</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="datapengguna">Menghitung Berat Badan Ideal</h1>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="container-item">
+                <h2>Kalkulator BMI</h2>
+                <p>Kalkulator BMI adalah metrik standar yang digunakan untuk menentukan siapa saja yang masuk dalam
+                    golongan
+                    berat
+                    badan sehat dan tidak sehat. Menghitung berat badan ideal membantu anda menjaga kesehatan.</p>
+
+                <form>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">Jenis Kelamin</label>
+                        <div class="col-sm-6 inputGroupContainer">
+                            <label>
+                                <input type="radio" id="pria" name="sex" value="Pria">Pria
+                            </label>
+                            <label>
+                                <input type="radio" id="wanita" name="sex" value="Wanita">Wanita
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">Berat Badan (Kg)</label>
+                        <div class="input-group">
+                            <input class="form-control" type="number" name="weight" id="weight"
+                                placeholder="Berat Badan (Kg)">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">Usia (Tahun)</label>
+                        <div class="input-group">
+                            <input class="form-control" type="number" name="age" id="age" placeholder="Usia (Tahun)">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label">Tinggi Badan (Cm)</label>
+                        <div class="input-group">
+                            <input class="form-control" type="number" name="height" id="height"
+                                placeholder="Tinggi Badan (Cm)">
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--Button-->
+                    <div class="form-group">
+                        <label class="col-sm-6 control-label"></label>
+                        <div class="col-sm-6 mb-10">
+                            <button type="button" class="btn btn-default mb-10" onclick="hitungBMI();">Hitung</button>
+                            <button type="button" class="btn btn-default mb-10" onclick="clearBMI();">Reset</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="container-item" id="contenthasil" style="display: block;">
+                <h2>Hasil</h2>
+                <section class="result">
+                    <h3>BMI KAMU</h3>
+                    <span id="hasil" style="color: red;"></span>
+                    <h5 class="comment"></h5>
+                </section>
+                <section class="container-result">
+                    <p> </p>
+                    <div>
+                        <ul>
+                            <span id="saran1"> </span>
+                        </ul>
+                        <ul>
+                            <span id="saran2"> </span>
+                        </ul>
+                        <ul>
+                            <span id="saran3"> </span>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <footer></footer>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

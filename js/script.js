@@ -25,7 +25,7 @@ function hitungBMI() {
     if (bmi < 18.5) {
         status = 'Kekurangan Berat Badan';
         document.getElementById("saran1").innerHTML =
-            "<li><span>Untuk mencapai berat badan ideal kamu perlu makan makanan bergizi dan tingkatkan frekuensi makan </span></li>";
+            "<li><span>Tingkatkan konsumsi protein untuk mencapai berat badan ideal </span></li>";
         document.getElementById("saran2").innerHTML =
             "<li><span>Untuk mencapai berat badan ideal kamu perlu makan makanan bergizi dan tingkatkan frekuensi makan </span></li>";
         document.getElementById("saran3").innerHTML =
